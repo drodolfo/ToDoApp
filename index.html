@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet"> <!--Fuente linkead desde Google Fonts-->
+    <link rel="stylesheet" href="style.css">                                                    <!--Link a css-->
+    <title>To Do App</title>                                                                    <!--Título en la página-->
+  </head>
+  <script src="https://kit.fontawesome.com/1fa770593d.js" crossorigin="anonymous"></script>     <!--Link a fontawesome-->
+  <body>
+  <div class="container">                                                                       <!--Contenedor principal-->
+    <div class="perfil">                                                                        <!--Contenedor perfil-->
+      <div id="fecha"></div>                                                                 <!--Contenedor con id fecha-->
+      <h1>Hola, Diego Rodolfo</h1>
+      <span>Vamos a cumplir tus metas</span>
+    </div>
+    <div class="agregar-tarea">                                                                 <!--Contenedor agregar-tarea-->
+      <input type="text" id=input placeholder="agregar una tarea">                              <!--input con id input-->
+      <i id="enter" class="fas fa-plus-circle"></i>                                             <!--icono con id enter-->
+    </div>
+    <div class="seccion-tarea">                                                                 <!--Contenedor seccion-tarea-->
+      <h3>Estas son tus tareas pendientes</h3>
+      <ul id="lista">                                                                           <!--lista con id list-->
+            <!-- <li id="elemento">
+                <i class="far fa-circle co" data="realizado" id="0"></i>
+                <p class="text"> Hacer la tarea de matematicas </p>
+                <i class="fas fa-trash de" data="eliminado" id="0"></i> 
+            </li>
+            <li id="elemento">
+                <i class="far fa-circle co" data="realizado" id="0"></i>
+                <p class="text"> Lavar la ropa </p>
+                <i class="fas fa-trash de" data="eliminado" id="0"></i> 
+            </li> -->
+      </ul>
+    </div>
+  </div>
+  <script src="script.js" charset="utf-8"></script>                                                       <!--Link a script de javascript-->
+  </body>
+</html>

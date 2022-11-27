@@ -1,0 +1,111 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, #2a9d8f, #264653); /*realiza un gradiente linear para abajo, con la indicación de color sup e inf*/
+  height: 100vh;                                            /*setea un virtual height de 100%*/
+  font-family: 'Prompt', 'sans-serif';                      /*Utiliza la fuente linkeada en html*/
+}
+
+/*CONTENEDOR*/
+
+.container {
+  max-width: 80%;                                           /*Setea una tamaño del 80% de la pantalla para el contenedor*/
+  width: 400px;
+  height: 600px;
+  margin: 20px auto;                                           /*Setea margen de 0 arriba y automatico en los demás bordes*/
+}
+
+/*PERFILES*/
+
+.perfil h1 {                                                /*Clase perfil sección h1*/
+  color: white;
+}
+
+.perfil span {                                              /*Clase perfil sección span*/
+  color: white;
+  letter-spacing: 1px;                                      /*Setea un espaciado de 1px*/
+}
+
+/*CUADRO DE FECHA*/
+
+#fecha {
+  color: white;
+  padding: 50px 0 5px 0;
+}
+
+/*AGREGAR TAREAS*/
+
+.agregar-tarea {
+  background-color: white;
+  border-radius: 15px;
+  height: 70px;
+  display: flex;                                            /*Al setearlo como display: flex los children se ajustaran flexiblemente*/
+  align-items: center;
+  padding: 10px;                                            /*Margenes dentro del cuadro*/
+  gap: 70px;                                                /*Espaciado entre celdas*/
+  margin: 20px 0;
+}
+
+.agregar-tarea input {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+}
+
+.agregar-tarea i {
+  font-size: 40px;                                          /* De esta forma se cambia el tamaño del ícono*/
+  color: purple;                                            /* Cambia color del ícono*/
+}
+
+.agregar-tarea i:hover {                                    /*Propiedades al pasar el puntero*/
+  transform: scale(1.1);                                    /*Aumenta el tamaño en un 10%*/
+  cursor: pointer;                                          /*Cambia el cursor a la mano*/
+}
+
+.agregar-tarea input::placeholder {                         /*Modifica el formato del placeholder*/
+  font-size: 1.1rem;
+  color: purple;
+}
+
+/*SECCIÓN TAREAS*/
+
+.seccion-tarea h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.seccion-tarea li {                                           /*Es el cuadro donde aparecen las tareas agregadas*/
+  display: flex;
+  background: linear-gradient(to bottom, #3a5a40, #588157);
+  border-radius: 15px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;                             /*Alinea el contenido separando sus ítems*/
+  margin: 5px 0;                                              /*Agrega margen de 5px arriba y abajo, nada a los costados*/
+  color: white;
+}
+
+.seccion-tarea i {
+  font-size: 25px;                                            /*Tamaño del ícono*/
+}
+
+.seccion-tarea i:hover {
+  color: lightblue;
+  cursor: pointer;
+}
+
+.seccion-tarea > ul p {
+  font-size: 1.2rem;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: lightblue;
+}
